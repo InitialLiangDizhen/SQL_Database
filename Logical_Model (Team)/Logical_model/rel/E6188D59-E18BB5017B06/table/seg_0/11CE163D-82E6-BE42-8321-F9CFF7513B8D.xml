@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11CE163D-82E6-BE42-8321-F9CFF7513B8D" name="TRAINING_VET">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:50:53 UTC</createdTime>
+<generatorID>BF1008B2-D6A9-FCA5-F6C8-E741BAEE8C03</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vet_id" id="53D16864-6CE3-823A-8ADD-5928F4ED6E43">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:54:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>46E20798-E54D-D156-7A0A-A9F44CE010CA</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="927DB25C-06CD-FB0E-B26D-3C77AC4F5698" referredColumn="014219D7-1FB2-B3B6-A302-7578ED3F551A"/>
+</associations>
+</Column>
+<Column name="train_id" id="8F7F0A61-15BD-4341-DF02-056455DF549D">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:54:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Train course id]]></commentInRDBMS>
+<generatorID>64CA6FF0-A071-2696-8AD9-3D9FC3AE9D1E</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27483622-4B6E-253B-7429-7F93B901878A" referredColumn="7C008288-26D1-41B4-E581-F89FDC58E888"/>
+</associations>
+</Column>
+<Column name="train_vet_completed" id="EBFCC7F1-7EC5-A958-91B1-A803A00BC963">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:54:51 UTC</createdTime>
+<generatorID>3234057A-DCC1-AD5D-7A20-6F80EC9B0AC7</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<constraintName>chk_train_vet_completed</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="train_vet_expiry_date" id="FE0B47EC-AE44-2705-8762-3E0D1E09A0E0">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:54:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Traning Vet expiry date]]></commentInRDBMS>
+<generatorID>05B6F311-443C-C298-4638-200084C08AA0</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B9C8AA5E-40DB-7AED-5C97-3E0E1F9B269F" name="TRAINING_VET_PK">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:54:51 UTC</createdTime>
+<generatorID>E9FD2412-8831-9403-A8DF-F0167149473C</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53D16864-6CE3-823A-8ADD-5928F4ED6E43"/>
+<colUsage columnID="8F7F0A61-15BD-4341-DF02-056455DF549D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AFD6448-80C1-B3D8-B314-6FC3962A921C" name="TRAINING_TRAINING_VET">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:54:51 UTC</createdTime>
+<generatorID>76DA823F-9D73-6E16-9585-F126DD240BD5</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F7F0A61-15BD-4341-DF02-056455DF549D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26BC7FBD-43C1-539B-B616-D805E8519F0F" name="VET_TRAINING_VET">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:54:51 UTC</createdTime>
+<generatorID>36475411-ADC5-5A56-3359-3AB57DABB482</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53D16864-6CE3-823A-8ADD-5928F4ED6E43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

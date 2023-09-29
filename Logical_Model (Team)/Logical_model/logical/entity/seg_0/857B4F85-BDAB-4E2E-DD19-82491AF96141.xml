@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="857B4F85-BDAB-4E2E-DD19-82491AF96141" name="DRUGPRESCRIPTION">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-12 19:35:44 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="drug_id" id="BD83894F-0ACC-2595-A13D-A732D93EBA73">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-12 19:38:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Drug ID]]></commentInRDBMS>
+<generatorID>1E182304-F0AA-7DE2-E364-81D5169706AB</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<referedAttribute>CAFC5325-8D5C-D552-76E7-623FFAA4205D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_pres_linecost" id="690E9237-04C4-A57E-4E0C-39F96AF873B8">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-12 19:35:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Drug Prescription Line Cost]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_pres_qty_supplied" id="A1C43ADC-8E34-B719-C7E9-57A06472F050">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-12 19:37:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Drug Prescription Quantity Supplied]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_pres_actual_dose" id="A1ED1C6B-0F1C-1714-697F-E51DD66219C8">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-13 20:06:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Drug actual dose prescribed]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_pres_freq_administration" id="C43F5258-3670-84AA-607B-5214D61168C8">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-13 20:07:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Drug frequent administration]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Attribute_11" id="2011219A-08BB-B51A-72A4-1DE217BE06FF">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:09:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Visit ID]]></commentInRDBMS>
+<generatorID>898BBB62-55A5-D144-64C1-1B4F5C55CAAA</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<referedAttribute>8C4E3CCC-AADF-C46E-D14B-E130DDB22CBD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="46F1194D-8897-410D-3BCE-5A5338035512" name="DRUGPRESCRIPTION PK">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-12 19:38:43 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD83894F-0ACC-2595-A13D-A732D93EBA73</attributeRef>
+<attributeRef>2011219A-08BB-B51A-72A4-1DE217BE06FF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

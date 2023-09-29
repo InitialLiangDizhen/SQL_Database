@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PET_PETTYPE" directorySegmentName="seg_0" id="4E6796B3-B1BD-EBC0-AC14-98D77CFC95C1">
+<createdBy>Asus</createdBy>
+<createdTime>2023-09-13 07:50:32 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<sourcePk>4D32A0AA-8DCA-0E95-55B9-7206F50CCD13</sourcePk>
+<targetPk>34DE8BC4-9A8B-7584-A156-C2CC50AC6872</targetPk>
+<identifying>false</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>171B65F8-3AC6-96A7-CD84-4748E5855095</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>095C025C-9A4B-DFA9-B747-86B06C826FA5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

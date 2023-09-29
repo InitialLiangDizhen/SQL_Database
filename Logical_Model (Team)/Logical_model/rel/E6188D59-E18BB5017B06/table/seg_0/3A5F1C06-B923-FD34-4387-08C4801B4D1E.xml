@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A5F1C06-B923-FD34-4387-08C4801B4D1E" name="CLINIC">
+<createdBy>DavidL</createdBy>
+<createdTime>2023-09-12 10:59:34 UTC</createdTime>
+<generatorID>5C1E6F4C-BE36-C564-AEC2-42AC41FF3EB6</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="clinic_id" id="62E22C84-F99F-7310-12CB-C79E2C96C8EA">
+<createdBy>DavidL</createdBy>
+<createdTime>2023-09-12 10:59:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<generatorID>62114BAE-163B-E9A7-A5A7-6626FB488402</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_name" id="5D96A4A2-1D37-0556-CFC0-942DE5B208D1">
+<createdBy>DavidL</createdBy>
+<createdTime>2023-09-12 10:59:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic name]]></commentInRDBMS>
+<generatorID>78C271EF-34B8-5E75-F01F-671A1C5A4B85</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_addr" id="8F238725-C0D6-A42C-F840-BF232DB23A3A">
+<createdBy>DavidL</createdBy>
+<createdTime>2023-09-12 10:59:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic address]]></commentInRDBMS>
+<generatorID>9EAF4CA7-C986-DDB4-E2C6-7CFE2C87CA33</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_phone_no" id="5F7CD07A-9C8B-2043-D562-46D6765F09E8">
+<createdBy>DavidL</createdBy>
+<createdTime>2023-09-12 10:59:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic phone number]]></commentInRDBMS>
+<generatorID>8131E37B-5462-E3D5-5A09-91F5A4706499</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_id" id="2FCD7ACA-45FB-60EC-F022-099FC135E293">
+<createdBy>DavidL</createdBy>
+<createdTime>2023-09-12 10:59:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>32090A6D-DD96-0C7F-8C45-B808392FE6CE</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6ED72737-2401-CA02-1CA0-46AAF23D4421" referredColumn="014219D7-1FB2-B3B6-A302-7578ED3F551A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="978C29E5-4A8C-7A59-4034-433256B9A098" name="CLINIC_PK">
+<createdBy>DavidL</createdBy>
+<createdTime>2023-09-12 10:59:34 UTC</createdTime>
+<generatorID>8309E946-8CB0-F182-FCE3-B7F3348C6464</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62E22C84-F99F-7310-12CB-C79E2C96C8EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D88DECA1-BAA7-2948-D927-5ADE5F704297" name="CLINIC__IDX">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>83D56423-6A94-B6F0-7A86-12A2CD2A17D1</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2FCD7ACA-45FB-60EC-F022-099FC135E293"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0EB66E1-5160-D49E-0FB1-31724C5EC76C" name="CLINIC_HEAD_VET">
+<createdBy>DavidL</createdBy>
+<createdTime>2023-09-12 10:59:34 UTC</createdTime>
+<generatorID>83D56423-6A94-B6F0-7A86-12A2CD2A17D1</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FCD7ACA-45FB-60EC-F022-099FC135E293"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

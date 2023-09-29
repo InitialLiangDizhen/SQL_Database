@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F042061-36B0-699B-DE09-687AFA464F27" name="PET">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<generatorID>171B65F8-3AC6-96A7-CD84-4748E5855095</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pet_id" id="90D75861-3EEE-8AAC-D3F1-E0E71B2952FD">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet id]]></commentInRDBMS>
+<generatorID>ED0FAACE-D487-97F8-2CB7-96100FEA9BFE</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_name" id="87066250-FB9A-B6E7-8521-D37D5B5FB313">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet name]]></commentInRDBMS>
+<generatorID>EAE9C5EB-EBF5-4360-C036-21ED3E827336</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_birth_year" id="53006373-E5D2-E8B1-F9C6-1C963BC72BF0">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet birth year]]></commentInRDBMS>
+<generatorID>11EEB82C-4E56-1B79-67A8-10841BFC0143</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_alive" id="87707348-E498-9B55-5F8E-4F49BDDD0890">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status of pet whether alive or deceased]]></commentInRDBMS>
+<generatorID>8184F18D-AFA5-73FC-8472-6C1CFE466BAD</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<constraintName>chk_pet_status</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<listOfValues>
+<valueDef value="A" description="Alive"/>
+<valueDef value="D" description="Deceased"/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_id" id="F664C9E1-B0AA-D05D-6BF2-66088EE831FF">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner id]]></commentInRDBMS>
+<generatorID>A128DB45-2637-92E1-C92B-B7FE5E2C1A56</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43D661B6-112B-E5CE-0FD7-8DF070F573EE" referredColumn="28389F22-7998-5C5B-1CA4-687825B2C8E2"/>
+</associations>
+</Column>
+<Column name="pet_type_id" id="F07B931E-2D01-247F-089E-A8E12794301D">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet type id]]></commentInRDBMS>
+<generatorID>BB54C8E7-4211-B5B1-9A27-264B6FF91654</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3298FFEA-C6E9-2986-FAA6-2A90D618668E" referredColumn="09AA8AF9-A7C5-5E55-CDF8-7AA3FD104147"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0AEBC6C2-2215-1482-A4D4-932A29EB5903" name="PET_PK">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<generatorID>4D32A0AA-8DCA-0E95-55B9-7206F50CCD13</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90D75861-3EEE-8AAC-D3F1-E0E71B2952FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED9D0C6B-C902-7A24-F89D-DD6A926A595B" name="OWNER_PET">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<generatorID>0AA03CE3-C8AC-90F8-23B0-02E1780AAF59</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F664C9E1-B0AA-D05D-6BF2-66088EE831FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="377AF1F8-1B09-A868-2D09-A6317027228A" name="PET_PETTYPE">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<generatorID>4E6796B3-B1BD-EBC0-AC14-98D77CFC95C1</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F07B931E-2D01-247F-089E-A8E12794301D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

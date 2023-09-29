@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D209231-4B07-B93B-CB64-F599B608BC78" name="DRUGPRESCRIPTION">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<generatorID>857B4F85-BDAB-4E2E-DD19-82491AF96141</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="visit_id" id="835F4630-379C-E2DA-7559-AEAE2BEC44BF">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Visit Id (surrogate PK)]]></commentInRDBMS>
+<generatorID>5126D2EB-5F37-5336-60AC-E63BA2ADA351</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_id" id="FB277B35-0A2D-6030-08BE-B77DDA7C1AD4">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Drug ID]]></commentInRDBMS>
+<generatorID>BD83894F-0ACC-2595-A13D-A732D93EBA73</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F81C8DC-A89A-C3B8-5CEE-680790178303" referredColumn="FFDF1F5B-4372-214D-8643-D0B226AAAB0F"/>
+</associations>
+</Column>
+<Column name="drug_pres_linecost" id="F7555F45-5C87-DA4D-AAA3-BBE7C447FFBE">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Drug Prescription Line Cost]]></commentInRDBMS>
+<generatorID>690E9237-04C4-A57E-4E0C-39F96AF873B8</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_pres_qty_supplied" id="B30FCBE8-2B5B-45E1-E75C-DDF326BF2F7E">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Drug Prescription Quantity Supplied]]></commentInRDBMS>
+<generatorID>A1C43ADC-8E34-B719-C7E9-57A06472F050</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_pres_actual_dose" id="7BAF2691-44B4-6D03-E414-DD65ECC796F3">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Drug actual dose prescribed]]></commentInRDBMS>
+<generatorID>A1ED1C6B-0F1C-1714-697F-E51DD66219C8</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_pres_freq_administration" id="6691E69E-C621-30BC-2E5B-2E2667F52CA4">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Drug frequent administration]]></commentInRDBMS>
+<generatorID>C43F5258-3670-84AA-607B-5214D61168C8</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Attribute_11" id="0A4F2E7B-86D8-DE68-83D8-DC80A43D8F4A">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:10:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Visit ID]]></commentInRDBMS>
+<generatorID>2011219A-08BB-B51A-72A4-1DE217BE06FF</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F72CCE04-19A7-068B-AF1E-EBE661ADDD33" referredColumn="D9C4CBB3-2F64-DC84-A287-B941700BE551"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D38C2E50-4BFE-4757-8483-4F124051862F" name="DRUGPRESCRIPTION_PK">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<generatorID>46F1194D-8897-410D-3BCE-5A5338035512</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB277B35-0A2D-6030-08BE-B77DDA7C1AD4"/>
+<colUsage columnID="835F4630-379C-E2DA-7559-AEAE2BEC44BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6B33F87-9F15-7405-225D-F8A24123C062" name="DRUG_DRUGPRESC">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 04:48:23 UTC</createdTime>
+<generatorID>1E182304-F0AA-7DE2-E364-81D5169706AB</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB277B35-0A2D-6030-08BE-B77DDA7C1AD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C197210-8DE2-7435-95AA-4E115673405B" name="VISIT_DRUGPRESCRIPTION">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:10:10 UTC</createdTime>
+<generatorID>898BBB62-55A5-D144-64C1-1B4F5C55CAAA</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A4F2E7B-86D8-DE68-83D8-DC80A43D8F4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF1008B2-D6A9-FCA5-F6C8-E741BAEE8C03" name="TRAINING_VET">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:50:09 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="vet_id" id="46E20798-E54D-D156-7A0A-A9F44CE010CA">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:53:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>36475411-ADC5-5A56-3359-3AB57DABB482</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<referedAttribute>8552B1F0-A47B-1C77-E6E5-B3A2BBF09E40</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="train_id" id="64CA6FF0-A071-2696-8AD9-3D9FC3AE9D1E">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:54:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Train course id]]></commentInRDBMS>
+<generatorID>76DA823F-9D73-6E16-9585-F126DD240BD5</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<referedAttribute>5344EB2F-E5FC-460E-C111-AF54A781B441</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="train_vet_completed" id="3234057A-DCC1-AD5D-7A20-6F80EC9B0AC7">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:51:13 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<constraintName>chk_train_vet_completed</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="train_vet_expiry_date" id="05B6F311-443C-C298-4638-200084C08AA0">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:52:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Traning Vet expiry date]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9FD2412-8831-9403-A8DF-F0167149473C" name="TRAINING_VET PK">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:53:53 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>46E20798-E54D-D156-7A0A-A9F44CE010CA</attributeRef>
+<attributeRef>64CA6FF0-A071-2696-8AD9-3D9FC3AE9D1E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

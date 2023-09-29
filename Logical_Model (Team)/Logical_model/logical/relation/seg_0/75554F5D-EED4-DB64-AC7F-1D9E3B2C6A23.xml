@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SPECIALISATION_VET" directorySegmentName="seg_0" id="75554F5D-EED4-DB64-AC7F-1D9E3B2C6A23">
+<createdBy>Asus</createdBy>
+<createdTime>2023-09-13 07:52:27 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<sourcePk>01FE00C9-F02B-895D-987E-B51B2C62E427</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>specialise</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>05BB21B5-3CFF-2562-49A0-0C31A6265566</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BE098781-3038-8713-E96A-C48EEDD92114</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

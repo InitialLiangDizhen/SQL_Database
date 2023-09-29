@@ -1,0 +1,217 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F52DA7F6-266C-97CA-CA5C-157FAB2584EB" name="VISIT">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:58:48 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Attribute_11" id="8C4E3CCC-AADF-C46E-D14B-E130DDB22CBD">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:09:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Visit ID]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_datetime" id="17A4147F-445E-9575-DE96-B6EB9019CDC1">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:58:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Visit Date and Time]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_id" id="847A865B-CC2E-B7C5-2801-8FBE9928EC7D">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:02:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>F2F24759-70D0-BACE-12D6-4CE80CC2AA1B</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<referedAttribute>8552B1F0-A47B-1C77-E6E5-B3A2BBF09E40</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_pet_weight" id="1C3D0CEB-029E-AF6B-0FF1-EEE9EEF0877A">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:59:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet weight during visit]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_length" id="4A33BD07-DB3C-476C-757C-4B13FC9F586B">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:59:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Visit duration length]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_notes" id="9572B087-9BDB-9E59-1C1A-A88A244639C8">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:59:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Notes on the pet's condition during visit]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_totalcost" id="48CA4011-1330-7A40-905E-0AD6712B5DE4">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total cost for visit]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_payment_type" id="8045F362-7D2A-9F0D-1144-B777FBDAE0E8">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:00:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Payment type for visit]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<constraintName>chk_payment_type</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="C" description="CASH"/>
+<valueDef value="E" description="EFT"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clinic_id" id="4FE9B4BC-BC3E-5401-C34E-EBBE69577921">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:02:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<generatorID>69B91E32-68B0-6224-DF69-405713CACA65</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<referedAttribute>62114BAE-163B-E9A7-A5A7-6626FB488402</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_id" id="578052AA-2C2F-8695-FBCE-C5BD22C907A7">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:04:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet id]]></commentInRDBMS>
+<generatorID>D317531C-D52C-0E86-7346-189621DB8F45</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<referedAttribute>ED0FAACE-D487-97F8-2CB7-96100FEA9BFE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_id" id="49E26E81-49A4-D972-0073-812C6A4E7E50">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:04:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner id]]></commentInRDBMS>
+<generatorID>9AC26873-1EA0-E797-B54D-07893A0EF8C4</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<referedAttribute>F5EDABFF-6606-1348-6677-CB5B047F1928</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6CE19701-041C-572B-B453-B605FDC0D5B3" name="VISIT PK">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 05:59:07 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8C4E3CCC-AADF-C46E-D14B-E130DDB22CBD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3D11DF53-E4C5-61F4-E5BE-982813A4CFB9" name="VISIT_NK">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-14 06:09:28 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="false"/>
+</engineerTo>
+<newElementsIDs>847A865B-CC2E-B7C5-2801-8FBE9928EC7D,17A4147F-445E-9575-DE96-B6EB9019CDC1</newElementsIDs>
+<usedAttributes>
+<attributeRef>847A865B-CC2E-B7C5-2801-8FBE9928EC7D</attributeRef>
+<attributeRef>17A4147F-445E-9575-DE96-B6EB9019CDC1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

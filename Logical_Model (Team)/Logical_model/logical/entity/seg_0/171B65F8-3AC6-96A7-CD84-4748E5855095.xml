@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="171B65F8-3AC6-96A7-CD84-4748E5855095" name="PET">
+<createdBy>Asus</createdBy>
+<createdTime>2023-09-12 15:36:59 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pet_id" id="ED0FAACE-D487-97F8-2CB7-96100FEA9BFE">
+<createdBy>Asus</createdBy>
+<createdTime>2023-09-12 15:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet id]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_name" id="EAE9C5EB-EBF5-4360-C036-21ED3E827336">
+<createdBy>Asus</createdBy>
+<createdTime>2023-09-12 15:37:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet name]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_birth_year" id="11EEB82C-4E56-1B79-67A8-10841BFC0143">
+<createdBy>Asus</createdBy>
+<createdTime>2023-09-12 15:37:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet birth year]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_alive" id="8184F18D-AFA5-73FC-8472-6C1CFE466BAD">
+<createdBy>ansonwong</createdBy>
+<createdTime>2023-09-13 19:33:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status of pet whether alive or deceased]]></commentInRDBMS>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<constraintName>chk_pet_status</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<listOfValues>
+<valueDef value="A" description="Alive"/>
+<valueDef value="D" description="Deceased"/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_id" id="A128DB45-2637-92E1-C92B-B7FE5E2C1A56">
+<createdBy>Asus</createdBy>
+<createdTime>2023-09-12 16:09:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner id]]></commentInRDBMS>
+<generatorID>0AA03CE3-C8AC-90F8-23B0-02E1780AAF59</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<referedAttribute>F5EDABFF-6606-1348-6677-CB5B047F1928</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_type_id" id="BB54C8E7-4211-B5B1-9A27-264B6FF91654">
+<createdBy>Asus</createdBy>
+<createdTime>2023-09-13 07:57:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pet type id]]></commentInRDBMS>
+<generatorID>4E6796B3-B1BD-EBC0-AC14-98D77CFC95C1</generatorID>
+<ownerDesignName>Logical_model</ownerDesignName>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="true"/>
+</engineerTo>
+<referedAttribute>B399CA51-0B93-28FE-E814-3443979A4A8C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4D32A0AA-8DCA-0E95-55B9-7206F50CCD13" name="PET PK">
+<createdBy>Asus</createdBy>
+<createdTime>2023-09-12 15:37:21 UTC</createdTime>
+<ownerDesignName>Logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E6188D59-D74F-48AE-8122-E18BB5017B06" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ED0FAACE-D487-97F8-2CB7-96100FEA9BFE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
